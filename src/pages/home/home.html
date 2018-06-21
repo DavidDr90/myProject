@@ -15,6 +15,11 @@
       </ion-card-title>
     </ion-card-content>
   </ion-card>
+
+  <button ion-button large (click)="playAudio()">
+    play
+  </button>
+
   <ion-list>
     <ion-item *ngFor="let audio of audioList; index as i;">
       <p>{{audio.filename}}</p>
